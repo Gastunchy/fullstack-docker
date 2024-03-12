@@ -45,4 +45,16 @@ Fuente: [295topics-fullstack](https://github.com/roxsross/bootcamp-devops-2023/t
   1. Descarga imagen mongo-express
   2. Crea contenedor en red base expone puerto 3000
 
+## Informacion extra
+- los contenedores bakend, frontend y db tienen que estar si o si en la misma red
+- Los contenedores de db y mongo-express tienen que estar en la misma red
+- Tanto el script como los archivos docker estan testeados en UBUNTU
+- Pueden testear en https://killercoda.com/playgrounds/scenario/ubuntu
+
+## Ejecusion sugerida
+1. Clonar este repo (https://github.com/Gastunchy/fullstak-docker)
+2. Ingresar al directorio "fullstak-docker"
+3. Ejecutar "sudo chmod +x Deploy.sh" para hacer ejecutable el script
+4. ejecucion: "./Deploy.sh"
+
 
