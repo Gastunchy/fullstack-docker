@@ -18,9 +18,31 @@ Fuente: [295topics-fullstack](https://github.com/roxsross/bootcamp-devops-2023/t
 1. Solicita ingresar datos para las variables "dbuser" "dbpass" "expressuser" "expresspass"
    - Las dos primeras variables son el usuario y password de la base de datos (se sugiere un pass alfanumerico)
    - Las dos seguntas variables son el usuario y contraseña para ingresar a mongo-express
-3. Valida e instala: docker.io, docker-compose, git y curl
-4. Clona el repo: [https://github.com/roxsross/bootcamp-devops-2023 // Branch: ejercicio2-dockeriza](https://github.com/roxsross/bootcamp-devops-2023/tree/ejercicio2-dockeriza)
-5. Copia el contenido de 295devops-travel-lamp en public-html
-6. Crea archivo init.sql
-7. Cambia contenido de config.php
-8. Ejecuta docker-compose up -d
+2. Valida e instala: docker.io, docker-compose, git y curl
+3. Clona el repo: [[https://github.com/roxsross/bootcamp-devops-2023 // Branch: ejercicio2-dockeriza](https://github.com/roxsross/bootcamp-devops-2023/tree/ejercicio2-dockeriza)](https://github.com/roxsross/bootcamp-devops-2023/tree/ejercicio2-dockeriza/295topics-fullstack)
+4. Elimina carpetas innecesarias: 295devops-travel-lamp y 295words-docker que no son necesarias para este proyecto
+5. Crea un Dockerfile para el contenido backend
+6. Crea un Dockerfile para el contenido frontend
+7. Crea un docker-compose.yml para el desplieque completo de la solucion
+8. Ejecuta "docker-compose up -d" para desplegar la solucion
+
+## Detalle de docker-compose
+- ### MongoDB
+  1. Descarga imagen de mongoDB
+  2. Carga configuracion inicial "mongo-init.js" que esta unbicado en la carpeta DB
+  3. Crea contenedor con dos redes back (front, back y db) y base (db y mongo-express) 
+- ### Backend
+  1. Descarga imagen de node
+  2. Ejecuta el archivo Dockerfile para crear la imagen del backend
+  3. En la creacion de la imagen se copian todos los archivos de la app backend
+  4. Crea contenedor en red back con node e instala modulos necesarios y expone puerto 5000
+- ### frontend
+  1. Descarga imagen de node
+  2. Ejecuta el archivo Dockerfile para crear la imagen del backend
+  3. En la creacion de la imagen se copian todos los archivos de la app frontend
+  4. Crea contenedor en red back con node e instala modulos necesarios y expone puerto 3000
+- ### Mongo-express
+  1. Descarga imagen mongo-express
+  2. Crea contenedor en red base expone puerto 3000
+
+
