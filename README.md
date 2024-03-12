@@ -1,5 +1,6 @@
 # Fullstack-docker
 En este repo, se encuentra el archivo bash necesario para desplegar un fullstack (frontend, backend, db, mongo-express).
+Este ejercicio es parte del segundo reto (https://github.com/roxsross/bootcamp-devops-2023/tree/ejercicio2-dockeriza) de la [Clase 3 y 4](https://www.youtube.com/live/TSaGCXsyVU4?si=qOZiYKkMzcpQVv0x) de [IV Edicion Bootcamp DevOps 2023](https://www.youtube.com/playlist?list=PLNkefP1xaOeyTQuNnd6HYVPqCWMXn-c5P).
 
 <p align="center">
   <img src="https://github.com/Gastunchy/fullstack-docker/assets/97688245/2bb638d0-2ed9-4eaa-a9cc-4eadea69d9d2">
