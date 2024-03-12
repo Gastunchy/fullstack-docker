@@ -13,3 +13,14 @@ Esta aplicación consta de tres componentes principales:
 3. Base de Datos MongoDB: La base de datos se iniciará a través de un contenedor de MongoDB. Además, deberás proporcionar un archivo mongo-init.js que cargue datos iniciales en la base de datos cuando se inicie el contenedor de MongoDB.
 
 Fuente: [295topics-fullstack](https://github.com/roxsross/bootcamp-devops-2023/tree/ejercicio2-dockeriza/295topics-fullstack)https://github.com/roxsross/bootcamp-devops-2023/tree/ejercicio2-dockeriza/295topics-fullstack
+
+## Detalle de Deploy.sh:
+1. Solicita ingresar datos para las variables "dbuser" "dbpass" "expressuser" "expresspass"
+   - Las dos primeras variables son el usuario y password de la base de datos (se sugiere un pass alfanumerico)
+   - Las dos seguntas variables son el usuario y contraseña para ingresar a mongo-express
+3. Valida e instala: docker.io, docker-compose, git y curl
+4. Clona el repo: [https://github.com/roxsross/bootcamp-devops-2023 // Branch: ejercicio2-dockeriza](https://github.com/roxsross/bootcamp-devops-2023/tree/ejercicio2-dockeriza)
+5. Copia el contenido de 295devops-travel-lamp en public-html
+6. Crea archivo init.sql
+7. Cambia contenido de config.php
+8. Ejecuta docker-compose up -d
