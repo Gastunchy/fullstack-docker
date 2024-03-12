@@ -14,7 +14,7 @@ Esta aplicación consta de tres componentes principales:
 
 Fuente: [295topics-fullstack](https://github.com/roxsross/bootcamp-devops-2023/tree/ejercicio2-dockeriza/295topics-fullstack)https://github.com/roxsross/bootcamp-devops-2023/tree/ejercicio2-dockeriza/295topics-fullstack
 
-## Detalle de Deploy.sh:
+# Detalle de Deploy.sh:
 1. Solicita ingresar datos para las variables "dbuser" "dbpass" "expressuser" "expresspass"
    - Las dos primeras variables son el usuario y password de la base de datos (se sugiere un pass alfanumerico)
    - Las dos seguntas variables son el usuario y contraseña para ingresar a mongo-express
