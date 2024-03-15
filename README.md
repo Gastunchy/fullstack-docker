@@ -54,10 +54,7 @@ Fuente: [295topics-fullstack](https://github.com/roxsross/bootcamp-devops-2023/t
 ## Ejecusion sugerida
 1. Clonar este repo ([https://github.com/Gastunchy/fullstak-docker](https://github.com/Gastunchy/fullstack-docker.git))
 2. Ingresar al directorio "fullstak-docker"
-3. Ejecutar
-4. ```SHELL
-5. sudo chmod +x Deploy.sh" para hacer ejecutable el script
-```
-6. ejecucion: ``./Deploy.sh``
+3. Ejecutar ``sudo chmod +x Deploy.sh" para hacer ejecutable el script``
+4. ejecucion: ``./Deploy.sh``
 
 
