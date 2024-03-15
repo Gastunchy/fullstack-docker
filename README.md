@@ -58,4 +58,3 @@ Fuente: [295topics-fullstack](https://github.com/roxsross/bootcamp-devops-2023/t
 4. ejecucion: ``./Deploy.sh``
 
 # Gracias: @roxsross
-# Gracias: 
